@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group 'com.apulbere.bountylaw'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 12
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile 'io.vertx:vertx-unit:3.8.4'
+    compile 'io.vertx:vertx-core:3.8.4'
+    compile 'org.jboss.resteasy:resteasy-vertx:3.1.0.Final'
+}
